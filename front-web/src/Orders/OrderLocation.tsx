@@ -52,7 +52,7 @@ function OrderLocation({onChangeLocation}: Props) {
          onChangeLocation({
            latitude: place.position.lat,
            longitude: place.position.lng,
-           address: place.label!    // o label existe se o endereço existe, por isso o "!"
+           address: place.label!
          });
       };
 
