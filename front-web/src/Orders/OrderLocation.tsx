@@ -5,10 +5,8 @@ import { fetchLocalMapBox } from "../api";
 import { OrderLocationData } from "./types";
 
 const initialPosition = {
-  //  lat: -18.9110558, 
-  //  lng: -48.26201
-    lat: -8.053148,
-    lng: -34.956984
+    lat: -18.9110558, 
+    lng: -48.26201
 }
 
 type Place = {
@@ -81,7 +79,8 @@ function OrderLocation({onChangeLocation}: Props) {
         />
         <Marker position={address.position}>
           <Popup>
-            Meu marcador.
+            <strong>Endereço selecionado:</strong><br/> <br /> 
+            {address.value}
           </Popup>
         </Marker>
       </MapContainer>
